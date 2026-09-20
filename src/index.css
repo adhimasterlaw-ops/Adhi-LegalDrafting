@@ -1,0 +1,418 @@
+@import "tailwindcss";
+
+/* Typography styling for legislative and academic drafting */
+.legal-document-body h1 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-align: center;
+  color: #f8fafc;
+  margin-top: 1.75rem;
+  margin-bottom: 1rem;
+  font-family: 'Cinzel', Georgia, serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+.legal-document-body h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fcd34d;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-family: 'Cinzel', Georgia, serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.legal-document-body h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.legal-document-body h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.legal-document-body p {
+  margin-bottom: 0.85rem;
+  line-height: 1.7;
+  color: #cbd5e1;
+  text-align: justify;
+}
+
+.legal-document-body ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 0.85rem;
+  color: #cbd5e1;
+}
+
+.legal-document-body ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 0.85rem;
+  color: #cbd5e1;
+}
+
+.legal-document-body li {
+  margin-bottom: 0.35rem;
+  line-height: 1.6;
+}
+
+.legal-document-body strong {
+  color: #f1f5f9;
+  font-weight: 700;
+}
+
+.legal-document-body hr {
+  border-color: rgba(148, 163, 184, 0.2);
+  margin: 1.5rem 0;
+}
+
+.legal-document-body blockquote {
+  border-left: 3px solid #f59e0b;
+  padding-left: 1rem;
+  font-style: italic;
+  color: #94a3b8;
+  margin: 1rem 0;
+}
+
+.legal-document-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+  font-size: 0.85rem;
+  overflow-x: auto;
+  display: block;
+}
+
+.legal-document-body table tbody,
+.legal-document-body table thead {
+  width: 100%;
+  min-width: 100%;
+}
+
+.legal-document-body th,
+.legal-document-body td {
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  padding: 0.6rem 0.85rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.legal-document-body th {
+  background-color: rgba(30, 41, 59, 0.85);
+  color: #f8fafc;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+/* ==========================================================================
+   DYNAMIC THEME FORMATTING ENGINE PRESETS
+   ========================================================================== */
+
+/* 1. DEFAULT DARK THEME (Dark Slate, Amber Gold & High-Visibility White) */
+.legal-theme-default-dark {
+  background-color: #020617;
+  color: #cbd5e1;
+}
+
+.legal-theme-default-dark h1 {
+  color: #ffffff !important;
+  border-bottom: 2px solid rgba(245, 158, 11, 0.3) !important;
+}
+
+.legal-theme-default-dark h2 {
+  color: #fbbf24 !important; /* Sharp Amber / Gold */
+}
+
+.legal-theme-default-dark h3 {
+  color: #f1f5f9 !important;
+}
+
+.legal-theme-default-dark h4 {
+  color: #cbd5e1 !important;
+}
+
+.legal-theme-default-dark p,
+.legal-theme-default-dark li {
+  color: #cbd5e1 !important;
+}
+
+.legal-theme-default-dark hr {
+  border-color: rgba(148, 163, 184, 0.25) !important;
+}
+
+.legal-theme-default-dark blockquote {
+  border-left: 4px solid #f59e0b !important;
+  background: rgba(245, 158, 11, 0.07);
+  padding: 0.75rem 1rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  color: #e2e8f0 !important;
+}
+
+.legal-theme-default-dark blockquote strong {
+  color: #fbbf24 !important;
+}
+
+.legal-theme-default-dark table th {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+  border-color: #334155 !important;
+}
+
+.legal-theme-default-dark table td {
+  border-color: #1e293b !important;
+  background-color: rgba(15, 23, 42, 0.4);
+}
+
+.legal-theme-default-dark table tr:nth-child(even) td {
+  background-color: rgba(30, 41, 59, 0.35);
+}
+
+/* 1b. DARK EMERALD THEME (Kabupaten Badung Health Eco-Slate & Emerald) */
+.legal-theme-dark-emerald {
+  background-color: #031513;
+  color: #cbd5e1;
+}
+
+.legal-theme-dark-emerald h1 {
+  color: #ffffff !important;
+  border-bottom: 2px solid rgba(16, 185, 129, 0.4) !important;
+}
+
+.legal-theme-dark-emerald h2 {
+  color: #34d399 !important; /* Emerald 400 */
+}
+
+.legal-theme-dark-emerald h3 {
+  color: #f1f5f9 !important;
+}
+
+.legal-theme-dark-emerald h4 {
+  color: #a7f3d0 !important;
+}
+
+.legal-theme-dark-emerald p,
+.legal-theme-dark-emerald li {
+  color: #cbd5e1 !important;
+}
+
+.legal-theme-dark-emerald hr {
+  border-color: rgba(16, 185, 129, 0.25) !important;
+}
+
+.legal-theme-dark-emerald blockquote {
+  border-left: 4px solid #10b981 !important;
+  background: rgba(16, 185, 129, 0.08);
+  padding: 0.75rem 1rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  color: #e2e8f0 !important;
+}
+
+.legal-theme-dark-emerald blockquote strong {
+  color: #34d399 !important;
+}
+
+.legal-theme-dark-emerald table th {
+  background-color: #064e3b !important;
+  color: #f8fafc !important;
+  border-color: #047857 !important;
+}
+
+.legal-theme-dark-emerald table td {
+  border-color: #064e3b !important;
+  background-color: rgba(6, 78, 59, 0.2);
+}
+
+.legal-theme-dark-emerald table tr:nth-child(even) td {
+  background-color: rgba(6, 78, 59, 0.35);
+}
+
+/* 2. LIGHT JUDICIAL THEME (High-contrast Off-White / Navy / Black Print-Ready) */
+.legal-theme-light-judicial {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+.legal-theme-light-judicial h1 {
+  color: #090d16 !important;
+  border-bottom: 2px solid #0f172a !important;
+}
+
+.legal-theme-light-judicial h2 {
+  color: #1e3a8a !important; /* Deep Navy Blue */
+  border-bottom: 1px solid #cbd5e1 !important;
+  padding-bottom: 0.25rem;
+}
+
+.legal-theme-light-judicial h3 {
+  color: #0f172a !important;
+  font-weight: 800 !important;
+}
+
+.legal-theme-light-judicial h4 {
+  color: #1e293b !important;
+  font-weight: 700 !important;
+}
+
+.legal-theme-light-judicial p,
+.legal-theme-light-judicial li {
+  color: #1e293b !important;
+  line-height: 1.75 !important;
+}
+
+.legal-theme-light-judicial strong {
+  color: #000000 !important;
+  font-weight: 800 !important;
+}
+
+.legal-theme-light-judicial hr {
+  border-color: #94a3b8 !important;
+  border-width: 1px;
+}
+
+.legal-theme-light-judicial blockquote {
+  border-left: 4px solid #1e3a8a !important;
+  background-color: #f1f5f9 !important;
+  padding: 0.75rem 1rem;
+  border-radius: 0 0.375rem 0.375rem 0;
+  color: #0f172a !important;
+  font-style: normal;
+}
+
+.legal-theme-light-judicial blockquote strong {
+  color: #1e3a8a !important;
+}
+
+.legal-theme-light-judicial table th {
+  background-color: #1e293b !important;
+  color: #ffffff !important;
+  border-color: #0f172a !important;
+}
+
+.legal-theme-light-judicial table td {
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+  background-color: #ffffff;
+}
+
+.legal-theme-light-judicial table tr:nth-child(even) td {
+  background-color: #f8fafc !important;
+}
+
+/* 3. CRIMSON ALERT THEME (Urgent Enforcement, Hazard Alerts & Sanctions) */
+.legal-theme-crimson-alert {
+  background-color: #0f0507 !important;
+  color: #fecdd3 !important;
+}
+
+.legal-theme-crimson-alert h1 {
+  color: #ffffff !important;
+  border-bottom: 2px solid #ef4444 !important;
+}
+
+.legal-theme-crimson-alert h2 {
+  color: #f87171 !important; /* Bright Crimson Red */
+}
+
+.legal-theme-crimson-alert h3 {
+  color: #fda4af !important;
+}
+
+.legal-theme-crimson-alert h4 {
+  color: #fecdd3 !important;
+}
+
+.legal-theme-crimson-alert p,
+.legal-theme-crimson-alert li {
+  color: #fecdd3 !important;
+}
+
+.legal-theme-crimson-alert strong {
+  color: #ffffff !important;
+}
+
+.legal-theme-crimson-alert hr {
+  border-color: rgba(239, 68, 68, 0.3) !important;
+}
+
+.legal-theme-crimson-alert blockquote {
+  border-left: 4px solid #ef4444 !important;
+  background: rgba(239, 68, 68, 0.15) !important;
+  padding: 0.85rem 1.15rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  color: #ffe4e6 !important;
+  border-top: 1px solid rgba(239, 68, 68, 0.2);
+  border-bottom: 1px solid rgba(239, 68, 68, 0.2);
+  border-right: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.legal-theme-crimson-alert blockquote strong {
+  color: #f87171 !important;
+}
+
+.legal-theme-crimson-alert table th {
+  background-color: #450a0a !important;
+  color: #ffffff !important;
+  border-color: #7f1d1d !important;
+}
+
+.legal-theme-crimson-alert table td {
+  border-color: #450a0a !important;
+  background-color: rgba(69, 10, 10, 0.25);
+  color: #fecdd3 !important;
+}
+
+.legal-theme-crimson-alert table tr:nth-child(even) td {
+  background-color: rgba(127, 29, 29, 0.25) !important;
+}
+
+/* Universal Alert Blockquote Highlight in any theme */
+.legal-document-body blockquote:has(strong:contains("PERINGATAN")),
+.legal-document-body blockquote:has(strong:contains("SANKSI")),
+.legal-document-body blockquote:has(strong:contains("CRIMSON ALERT")),
+.legal-document-body blockquote:has(strong:contains("ALERT")) {
+  border-left: 4px solid #dc2626 !important;
+  background-color: rgba(220, 38, 38, 0.12) !important;
+}
+
+/* Print styling */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  header, footer, button, .no-print, input, textarea {
+    display: none !important;
+  }
+  .legal-document-body {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+  }
+  .legal-document-body p,
+  .legal-document-body h1,
+  .legal-document-body h2,
+  .legal-document-body h3,
+  .legal-document-body td {
+    color: #000000 !important;
+  }
+  .legal-document-body table th {
+    background-color: #f1f5f9 !important;
+    color: #000000 !important;
+    border: 1px solid #000000 !important;
+  }
+  .legal-document-body table td {
+    border: 1px solid #000000 !important;
+  }
+}

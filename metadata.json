@@ -1,0 +1,6 @@
+{
+  "name": "ADHI LEGAL DRAFTING SYSTEM",
+  "description": "Sistem Perancangan Hukum & Regulasi Sektor Kesehatan Daerah berbasis Standar JDIH, UU No. 17/2023, dan PP No. 28/2024.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
